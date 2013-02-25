@@ -57,7 +57,7 @@ YUI().use('mojito-test-extra', 'test', 'json-parse', 'json-stringify', function(
                 listAllMojits: function() {
                     return ['orange', 'red'];
                 },
-                getResourceVersions: function(filter) {
+                getResources: function(env, ctx, filter) {
                     if ('mojit' === filter.type) {
                         return [
                             this._mkRes('mojit', null, filter.mojit, null, 'mojits/' + filter.name)
